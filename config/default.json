@@ -1,0 +1,4 @@
+{
+  "mongoURI": "mongodb+srv://koolkarni:Vitty@12345@cluster0-nvcuj.mongodb.net/fstack?authSource=admin&replicaSet=Cluster0-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true",
+  "jwtSecret": "Vitty@12345"
+}
