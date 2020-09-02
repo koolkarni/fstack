@@ -8,19 +8,6 @@ connectDB();
 //Init middlewares
 app.use(express.json({ extended: false }));
 
-app.use((req, res, next) => {
-  res.setHeader('Access-control-Allow-Origin', '*');
-  res.setHeader('Access-control-Allow-Methods', 'OPTIONS,GET,POST,PUT,PATCH,DELETE');
-  res.setHeader('Access-control-Allow-Headers', 'Content-Type, Authorization');
-  next();
-});
-
-app.get('/', (req, res) => {
-  console.log('got req /');
-  res.send('hello');
-});
-
-
 
 //Define Routes
 app.use('/api/users', require('./routes/api/users'))
