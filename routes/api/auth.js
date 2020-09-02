@@ -24,8 +24,8 @@ router.get('/', auth, async (req, res) => {
 });
 
 
-// @route POST api/user
-// @desc Register user
+// @route POST api/auth
+// @desc Login user
 // @access Public
 router.post('/', [
     check('email', 'Please include a valid email').isEmail(),
